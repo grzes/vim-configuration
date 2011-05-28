@@ -9,9 +9,10 @@ if has("gui_running")
     set guioptions-=T
     set guioptions-=m
     set guioptions-=e
-    set guifont=Terminus\ 8
-    colorsche rdark
+    set guifont=Monospace\ 8
+    colorscheme mustang
     set mousehide
+    set lines=70 columns=200
 elseif (&term == 'xterm-color')
     set t_Co=256
     colorscheme jhdark
@@ -27,6 +28,10 @@ set printdevice=LaserJet
 set printencoding=iso-8859-2
 set printfont=curier
 set printfont=Mono\ 8
+" }}}
+
+" {{{ plugin setup
+let NERDTreeIgnore = ['.py[oc]']
 " }}}
 
 " {{{ main configuration
